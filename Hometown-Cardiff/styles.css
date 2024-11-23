@@ -1,0 +1,300 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container for content centering */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header and navigation styles */
+header {
+    background-color: #FFCC00;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFCC00;
+}
+
+/* Hero Section */
+#hero {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url('your-image.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+#hero .hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#hero .hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+#about {
+    padding: 80px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#about img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* Landmarks Section */
+#landmarks {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#landmarks h2 {
+    font-size: 2rem;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+#landmarks .landmarks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+/* Individual Landmark Card */
+.landmark-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+}
+
+.landmark-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Landmark Card Image */
+.landmark-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.landmark-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Landmark Card Text */
+.landmark-card h3 {
+    font-size: 1.5rem;
+    color: #004d99;
+    margin-bottom: 10px;
+}
+
+.landmark-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Landmark Card Link Button */
+.landmark-card a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.landmark-card a:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+/* Culture Section */
+#culture {
+    padding: 80px 0;
+    text-align: center;
+}
+
+#culture h2 {
+    font-size: 2rem;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+#culture p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#culture:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Daffodil Info Section */
+#daffodil-info {
+    margin: 50px auto;
+    text-align: center;
+    max-width: 800px;
+    background-color: #FFF9E6;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#daffodil-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+#daffodil-info h3 {
+    font-size: 1.8rem;
+    color: #FFCC00;
+    margin-bottom: 15px;
+}
+
+#daffodil-info p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+#daffodil-info strong {
+    color: #FF9900;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    #hero .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    #hero .hero-content p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    #about p, #culture p {
+        font-size: 1rem;
+    }
+}
